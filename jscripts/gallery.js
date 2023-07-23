@@ -15,10 +15,10 @@ function addImage(number) {
   myLi.setAttribute("class", "gallery_card");
 
   var image = document.createElement('img');
-  image.setAttribute("src", "../dream_events/images/gallery/"+number+".jpg")
+  image.setAttribute("src", "../images/gallery/"+number+".jpg")
   image.addEventListener('click', () => {
     popup.style.display = "flex";
-    document.getElementById("main_image").setAttribute("src", "../dream_events/images/gallery/"+number+".jpg");
+    document.getElementById("main_image").setAttribute("src", "../images/gallery/"+number+".jpg");
     currentImage(number);
   });
   image.addEventListener('load', () => {
@@ -32,7 +32,7 @@ function addImage(number) {
 }
 
 function previous_Image(path) {
-  var number = (path).replace("../dream_events/images/gallery/", "");
+  var number = (path).replace("../images/gallery/", "");
   number = (number).replace(".jpg", "");
   
   var image = document.getElementById('main_image');
@@ -40,12 +40,12 @@ function previous_Image(path) {
   currentImage(parseInt(number)-1);
 
   image.removeAttribute("src")
-  image.setAttribute("src", "../dream_events/images/gallery/"+(parseInt(number)-1)+".jpg")
+  image.setAttribute("src", "../images/gallery/"+(parseInt(number)-1)+".jpg")
 
 }
 
 function next_Image(path) {
-  var number = (path).replace("../dream_events/images/gallery/", "");
+  var number = (path).replace("../images/gallery/", "");
   number = (number).replace(".jpg", "");
   
   var image = document.getElementById('main_image');
@@ -53,7 +53,7 @@ function next_Image(path) {
   currentImage(parseInt(number)+1);
 
   image.removeAttribute("src")
-  image.setAttribute("src", "../dream_events/images/gallery/"+(parseInt(number)+1)+".jpg")
+  image.setAttribute("src", "../images/gallery/"+(parseInt(number)+1)+".jpg")
   
 
 }
