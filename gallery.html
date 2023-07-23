@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Dream Events Gallery</title>
+	
+	<meta name="description" content="Event Planner and Manager for Weddings, Parties, Corporate Events, Private Events, Sports Events, Anniversaries, Birthdays Parties and many more.">
+	<meta name="keywords" content="Dream Events, Dream Event, Dreams Event, Dreams Events, Events, Parties, Fests, Event Manager, Event Management, Event Supplier, Event Supplies, a event planner, an event planner, anniversary event planner, assistant event planner, baby shower event planner, baby shower event planner near me, best event planner, best event planner near me, best event planner website, best event planners in india, best event planners in vijayawada, birthday event planner, birthday event planner near me, bridal shower event planner, celebrity event planner, certified event planner, corporate event planner, decoration event planner, decoration event planner near me, event planner, event planner and event manager, event planner app, event planner background, event planner business, event planner business plan, event planner card, event planner company, event planner cost, event planner decorations, event planner description, event planner design, event planner exhibition, event planner expo 2023, event planner for anniversary, event planner for baby shower, event planner for birthday, event planner for birthday party, event planner for engagement, event planner for wedding, event planner hashtags, event planner hd images, event planner in india, event planner list, event planner menu, event planner message, event planner near, event planner near me, event planner offers, event planner office, event planner online, event planner online free, event planner organizer, event planner profile, event planner project, event planner qualities, event planner questionnaire, event planner questions, event planner questions to ask clients, event planner quotation, event planner quotes, event planner tips, event planner titles, event planner video, event planner visiting card, event planner vs event manager, event planner website, event planner website india, event planner wedding, event planner work, event planners in guntur, event planners in hyderabad, event planners in nellore, event planners in tirupati, event planners in vijayawada, event planners in vizag, family day event planner, famous event planner, fashion event planner, first birthday event planner, free online event planner, funeral event planner, gender reveal event planner, gender reveal event planner near me, golf tournament event planner, grace event planner, indeed event planner, indian event planner, list of events for event planners, logo event planner, low budget event planner, luxury event planner, marketing event planner, my event planner, office event planner, online event planner, online event planner website, part time event planner, party event planner, party planner vs event planner, picnic event planner, picnic event planner near me, planners for event planners, private event planner, professional event planner, proposal event planner, proposal event planner near me, remote event planner, ring ceremony event planner, romantic event planner, royal caribbean event planner, royal event planner, small event planner, sports event planner, the event planner, the event planner expo, travel event planner, unique event planner, valentine's day event planner, virtual event planner, wedding event planner, your event planner">
+	<meta name="author" content="Dream Events">
+
+
+	<link rel="icon" href = "images/logo.png" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="csss/gallery.css">
+</head>
+
+<body>
+
+	<div class="splash" id="splash">
+		<div class="ring"></div>
+		<div class="inner_loading">
+			<img src="images/logo.png" alt="Logo">
+			<span id="loading_text">Loading...</span>
+		</div>
+	</div>
+
+	<nav>
+		<img src="images/logo.png" alt="logo">
+
+		<h2 id="header_text">DREAM EVENTS</h2>
+
+		<ul id="nav_links">
+			<li><a href="index.html" id="home">Home</a></li>
+			<li><a href="#" id="gallery">Gallery</a></li>
+			<li><a onclick="scrollToContact()">Contact</a></li>
+			<li><a onclick="scrollToAddress()">Address</a></li>
+		</ul>
+
+		<img src="images/more.png" alt="menu" id="menu" onclick="openMenu()">
+
+	</nav>
+
+	<div class="dropdown">
+		<li><a href="index.html" id="home">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a onclick="scrollToContact()">Contact</a></li>
+			<li><a onclick="scrollToAddress()">Address</a></li>
+		</ul>
+	</div>
+	<article>
+		<h2 id="heading_gallery">Our Memories</h2>	
+		<ul id="gallery_grid">
+		</ul>
+	</article>
+
+	<h6 id="show_all">Show All</h6>
+
+	<footer>
+
+		<div class="footer">
+
+			<p id="address">
+				<strong>Address</strong><br>
+				Near II Town police station,
+				<br>Kakinada,
+				<br>East Godavari, <br>
+				Andhra Pradesh, <br>India
+				<br>533001	
+			</p>
+
+			<p id="feedback">
+				<strong>Feedback</strong><br>
+				For feedbacks <br>
+				Mail to <br>
+				-<a href="mailto:ashokdany713@gmail.com?subject=feedback" id="email_address">ashokdany713@gmail.com</a><br><br>
+				<b id="credits">© Dream Events</b>
+
+			</p>
+
+	 		<p id="contact_footer">
+	 			<div class="contact">
+					<strong>Contact</strong><br>Phone No. : <b>+919948665713</b><br>
+					<div class="social_media">
+						<img src="images/facebook.png" alt="Facebook">
+						<a href="https://www.facebook.com/people/Dream-Events/100041453846892/" target="blank_">Dream Events</a>
+					</div>
+					<div class="social_media">
+						<img src="images/instagram.png" alt="Instagram">
+						<a href="https://www.instagram.com/dream._.events/" target="blank_">Dream Events</a>
+					</div>
+	 			</div>
+			</p> 
+		</div>
+
+	</footer>
+
+	<div id="popup">
+		 <div id="popup_imageview">
+		 	<img src="images/previous.png" alt="" id="previous_image">
+		 	<img src="" id="main_image">
+		 	<img src="images/next.png" alt="" id="next_image">
+		 </div>
+
+		 <span onclick="closeImage()">Close</span>
+	</div>
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="jscripts/gallery.js"></script>
+</body>
+</html>
